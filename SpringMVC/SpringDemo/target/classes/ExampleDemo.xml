@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="exampleObj" class="SpringDemo.SpringDemo.model.Example">
+		<property name="id" value="1"></property>
+		<property name="name" value="srinivas"></property>
+		<property name="skillset">
+			<list>
+				<value>Java</value>
+				<value>.Net</value>
+				<value>Python</value>
+				<value>Angular</value>
+				<value>Java Script</value>
+				<value>Spring FW</value>
+			</list>
+		</property>
+		
+		<property name="projects">
+			<map>
+				<entry key="1" value="Open Source" />
+				<entry key="2">
+					<value>OBS</value>
+				</entry>
+			</map>		
+		</property>
+		
+		<property name="phone_nos">
+			<set>
+				<value>8465939303</value>
+				<value>6301208610</value>
+				<value>123456</value>
+				<value>8465936303</value>
+			</set>
+		</property>
+	
+	</bean>
+	
+</beans>
